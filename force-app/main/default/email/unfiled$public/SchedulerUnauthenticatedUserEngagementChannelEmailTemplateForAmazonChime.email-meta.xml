@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Plantilla de correo electrónico de confirmación de una cita cuando se programan las citas empleando canales de implicación con Amazon Chime.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cita para usuario no autenticado empleando canales de implicación - Para Amazon</name>
+    <style>none</style>
+    <subject>{!Organization.Name}:Confirmación de cita.</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

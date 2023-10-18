@@ -1,0 +1,34 @@
+<aura:component controller="TFG_Close_Claim" implements="flexipage:availableForAllPageTypes,force:hasRecordId" extends="c:TFG_BaseComponent">
+    <aura:attribute name="listCausa" type="List" />
+    <aura:attribute name="listResult" type="List" />
+    <aura:attribute name="selectedCause" type="String" />
+    <aura:attribute name="selectedResult" type="String" />
+    <aura:attribute name="comments" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+    <aura:handler name="change" value="{!v.selectedResult}" action="{!c.onSelectedResult}" />
+    <aura:handler name="change" value="{!v.selectedCause}" action="{!c.onSelectedCause}" />
+    <lightning:workspaceAPI aura:id="workspace" />
+        <lightning:select name="select1" label="Estado" disabled="true" value="Resuelta" aura:id="form_Valid">
+            <option value="Resuelta">Resuelta</option>
+        </lightning:select>
+        <lightning:select name="select2" label="Resultado" required="true" value="{!v.selectedResult}" disabled="false" aura:id="form_Valid2">
+            <option value="">{!$Label.c.Select_option}</option>
+            <aura:iteration items="{!v.listResult}" var="itemResult">
+                <option value="{!itemResult.value}" >
+                    {!itemResult.value}
+                </option>
+            </aura:iteration>
+        </lightning:select>
+        <lightning:select name="select3" label="Causa" required="true" value="{!v.selectedCause}" disabled="false" aura:id="form_Valid">
+            <option value="">{!$Label.c.Select_option}</option>
+            <aura:iteration items="{!v.listCausa}" var="itemReason">
+                <option value="{!itemReason.value}"  selected="{!itemReason.selected}" >
+                    {!itemReason.value}
+                </option>
+            </aura:iteration>
+        </lightning:select>
+        <lightning:textArea name="input-name" label="Comentario" placeholder="Comentario" required="true" disabled="false"
+                maxlength="4000" minlength="{!$Label.c.Minimun_size_comment_close}" value="{!v.comments}" aura:id="form_Valid"/>
+        <lightning:button label="Cerrar" onclick="{!c.closeClaim}" variant="brand" disabled="false"/> 
+</aura:component>

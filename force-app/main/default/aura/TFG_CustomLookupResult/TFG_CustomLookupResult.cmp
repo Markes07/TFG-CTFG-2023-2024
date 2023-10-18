@@ -1,0 +1,33 @@
+<!--
+* @ComponentName         FII_LC_CustomLookupResult
+* @Description           Lightning Component to show the result when look up Contract and Offer Line
+* @Author                VYF
+* @Email
+* @Vendor                ATOS
+* @Module                COSMOS
+* @Version               V0.1
+* @DateCreated           2019/01/08
+* @LastChange            2019/09/25            
+-->
+<aura:component description="FII_LC_CustomLookupResult"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+  access="global">
+  <aura:attribute name="oRecord" type="sObject" />
+  <aura:attribute name="sObjectType" type="String" />
+  <aura:attribute name="parentId" type="String"/>
+  <aura:attribute name="IconName" type="string" />
+
+  <!--Register the component level event-->
+  <aura:registerEvent name="oSelectedRecordEvent" type="c:TFG_SelectedRecordEvent" />
+  <tr aria-selected="false" role="presentation" class="slds-hint-parent slds-listbox__item" onclick="{!c.selectRecord}">
+    <td class="slds-truncate" data-label="{!$Label.c.Contract_Number}" title="{!v.oRecord.ContractNumber}">{!v.oRecord.ContractNumber}</td>
+
+    <td role="gridcell" class="slds-truncate" data-label="{!$Label.c.Status}" title="{!v.oRecord.Status}">{!v.oRecord.Status}</td>
+
+    <td role="gridcell" class="slds-truncate" data-label="{!$Label.c.Fecha_inicio}"
+        title="{!v.oRecord.StartDate}">{!v.oRecord.StartDate}</td>
+
+    <td role="gridcell" class="slds-truncate" data-label="{!$Label.c.Fecha_fin}"
+        title="{!v.oRecord.EndDate}">{!v.oRecord.EndDate}</td>
+  </tr>
+</aura:component>

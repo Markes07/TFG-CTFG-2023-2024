@@ -1,0 +1,8 @@
+Hola {!User.FirstName},
+
+Recibimos una solicitud para cambiar la dirección de correo electrónico para el nombre de usuario {!User.Username}. Asegúrese de que los siguientes cambios son correctos:
+
+Dirección de correo electrónico anterior: {!ChgEmailVer.OldEmail}
+Nueva dirección de correo electrónico: {!ChgEmailVer.NewEmail}
+
+Si no solicitó este cambio, póngase en contacto con su administrador de {!Community_Name} o responda a este correo electrónico.

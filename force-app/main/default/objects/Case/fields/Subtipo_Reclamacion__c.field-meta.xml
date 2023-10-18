@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtipo_Reclamacion__c</fullName>
+    <externalId>false</externalId>
+    <label>Subtipo Reclamación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>X01</fullName>
+                <default>false</default>
+                <label>Cliente reclama por la atención recibida</label>
+            </value>
+            <value>
+                <fullName>X02</fullName>
+                <default>false</default>
+                <label>Cliente reclama por usuario de acceso</label>
+            </value>
+            <value>
+                <fullName>X03</fullName>
+                <default>false</default>
+                <label>Cliente reclama algún concepto de su factura</label>
+            </value>
+            <value>
+                <fullName>X04</fullName>
+                <default>false</default>
+                <label>Certificado de lectura</label>
+            </value>
+            <value>
+                <fullName>X05</fullName>
+                <default>false</default>
+                <label>Solicitud de Duplicado Factura</label>
+            </value>
+            <value>
+                <fullName>X06</fullName>
+                <default>false</default>
+                <label>Contratos que no se facturan</label>
+            </value>
+            <value>
+                <fullName>X07</fullName>
+                <default>false</default>
+                <label>Rectificativas resol legal</label>
+            </value>
+            <value>
+                <fullName>X08</fullName>
+                <default>false</default>
+                <label>Cliente reclama su factura por incidencias en la gestión del contrato</label>
+            </value>
+            <value>
+                <fullName>X09</fullName>
+                <default>false</default>
+                <label>El cliente o el agente no puede descargar su factura</label>
+            </value>
+            <value>
+                <fullName>X10</fullName>
+                <default>false</default>
+                <label>Errores en el plan de cuota fija</label>
+            </value>
+            <value>
+                <fullName>X11</fullName>
+                <default>false</default>
+                <label>Cliente reclama por un pago no registrado</label>
+            </value>
+            <value>
+                <fullName>X12</fullName>
+                <default>false</default>
+                <label>Acuerdo de pago no delegado</label>
+            </value>
+            <value>
+                <fullName>X13</fullName>
+                <default>false</default>
+                <label>Cliente reclama porque le estamos pasando facturas que no son suyas</label>
+            </value>
+            <value>
+                <fullName>X14</fullName>
+                <default>false</default>
+                <label>Cliente reclama por un abono que no entiende/que no ha recibido</label>
+            </value>
+            <value>
+                <fullName>X15</fullName>
+                <default>false</default>
+                <label>Cliente quiere realizar el pago de una factura y el sistema no lo permite</label>
+            </value>
+            <value>
+                <fullName>X16</fullName>
+                <default>false</default>
+                <label>Cliente reclama la devolución de una entrega a cuenta</label>
+            </value>
+            <value>
+                <fullName>X17</fullName>
+                <default>false</default>
+                <label>Incidencias en el trámite de la contratación para empleados</label>
+            </value>
+            <value>
+                <fullName>X18</fullName>
+                <default>false</default>
+                <label>Cliente reclama que no se ha activado su contrato (errores imputables a Distribuidora)</label>
+            </value>
+            <value>
+                <fullName>X19</fullName>
+                <default>false</default>
+                <label>Gestion Admin Rechazos</label>
+            </value>
+            <value>
+                <fullName>X20</fullName>
+                <default>false</default>
+                <label>Reposición Contrato Energético</label>
+            </value>
+            <value>
+                <fullName>X21</fullName>
+                <default>false</default>
+                <label>Gestión Admin Mensajería</label>
+            </value>
+            <value>
+                <fullName>X22</fullName>
+                <default>false</default>
+                <label>Petición información adicional</label>
+            </value>
+            <value>
+                <fullName>X23</fullName>
+                <default>false</default>
+                <label>Cruce de Contratos</label>
+            </value>
+            <value>
+                <fullName>X24</fullName>
+                <default>false</default>
+                <label>Bajas error comercializadora</label>
+            </value>
+            <value>
+                <fullName>X25</fullName>
+                <default>false</default>
+                <label>Corte incorrecto por incidencia en la identificación del punto de suministro</label>
+            </value>
+            <value>
+                <fullName>X26</fullName>
+                <default>false</default>
+                <label>Cliente reclama por problemas con su contador</label>
+            </value>
+            <value>
+                <fullName>X27</fullName>
+                <default>false</default>
+                <label>Cliente solicita instalación de patrón para comprobar medida</label>
+            </value>
+            <value>
+                <fullName>X28</fullName>
+                <default>false</default>
+                <label>Cliente reclama daños en el medioambiente</label>
+            </value>
+            <value>
+                <fullName>X29</fullName>
+                <default>false</default>
+                <label>Cliente reclama por instalaciones de la red del distribuidor en mal estado</label>
+            </value>
+            <value>
+                <fullName>X30</fullName>
+                <default>false</default>
+                <label>Cliente reclama por baja calidad en suministro</label>
+            </value>
+            <value>
+                <fullName>X31</fullName>
+                <default>false</default>
+                <label>Cliente reclama la activación de su desistimiento</label>
+            </value>
+            <value>
+                <fullName>X32</fullName>
+                <default>false</default>
+                <label>Desistimiento Cliente</label>
+            </value>
+            <value>
+                <fullName>X33</fullName>
+                <default>false</default>
+                <label>Cliente reclama por error en Producto/Descuento contratado</label>
+            </value>
+            <value>
+                <fullName>X34</fullName>
+                <default>false</default>
+                <label>Cliente asegura no haber aceptado una oferta de Ensing Home Energy</label>
+            </value>
+            <value>
+                <fullName>X35</fullName>
+                <default>false</default>
+                <label>Terceros suplantan la identidad de Ensing Home Energy</label>
+            </value>
+            <value>
+                <fullName>X36</fullName>
+                <default>false</default>
+                <label>Cliente reclama por Retraso en Reenganche tras abonar la deuda</label>
+            </value>
+            <value>
+                <fullName>X37</fullName>
+                <default>false</default>
+                <label>Cliente reclama por recibir un aviso de Corte ó de Baja por impago y no tiene deuda</label>
+            </value>
+            <value>
+                <fullName>X38</fullName>
+                <default>false</default>
+                <label>Cliente reclama el consumo facturado tras cambio de titular</label>
+            </value>
+            <value>
+                <fullName>X39</fullName>
+                <default>false</default>
+                <label>Cliente reclama porque no está conforme con la curva horaria facturada</label>
+            </value>
+            <value>
+                <fullName>X40</fullName>
+                <default>false</default>
+                <label>Cliente reclama por consumo excesivo/lectura estimada</label>
+            </value>
+            <value>
+                <fullName>X41</fullName>
+                <default>false</default>
+                <label>Cliente solicita Indemnización por una intervención en el contador</label>
+            </value>
+            <value>
+                <fullName>X42</fullName>
+                <default>false</default>
+                <label>Cliente solicita Certificado avería técnica/ausencia suministro</label>
+            </value>
+            <value>
+                <fullName>X43</fullName>
+                <default>false</default>
+                <label>Cliente solicita Indemnización por obras del distribuidor</label>
+            </value>
+            <value>
+                <fullName>X44</fullName>
+                <default>false</default>
+                <label>Cliente solicita Indemnización por una intervención de urgencias de Gas</label>
+            </value>
+            <value>
+                <fullName>X45</fullName>
+                <default>false</default>
+                <label>Cliente solicita Indemnización por una avería técnica/ausencia suministro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

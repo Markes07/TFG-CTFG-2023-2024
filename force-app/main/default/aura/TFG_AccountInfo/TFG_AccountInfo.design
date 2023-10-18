@@ -1,0 +1,6 @@
+<design:component>
+    <design:attribute name="accountId" label="accountId"
+                      description="Id of the client"/>
+    <design:attribute name="contactId" label="contactId"
+                      description="Id of contact"/>
+</design:component>

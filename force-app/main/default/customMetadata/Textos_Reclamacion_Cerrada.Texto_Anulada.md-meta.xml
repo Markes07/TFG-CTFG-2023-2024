@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Texto Anulada</label>
+    <protected>false</protected>
+    <values>
+        <field>Resultado__c</field>
+        <value xsi:type="xsd:string">Anulada</value>
+    </values>
+    <values>
+        <field>Texto__c</field>
+        <value xsi:type="xsd:string">ha sido cerrada con resultado &quot;Anulada&quot; y causa</value>
+    </values>
+</CustomMetadata>

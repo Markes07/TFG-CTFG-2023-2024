@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X08</label>
+    <protected>false</protected>
+    <values>
+        <field>Activo__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Clase__c</field>
+        <value xsi:type="xsd:string">Petición</value>
+    </values>
+    <values>
+        <field>Descripcion_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">Cliente reclama su factura por incidencias en la gestión del contrato</value>
+    </values>
+    <values>
+        <field>Mensajeria_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">Registrar cuando el cliente reclama un error en la baja, alta o modificación de su contrato que está afectando a su factura. Recuerda que estos productos pueden conllevar ajustes de cuota ante bajas anticipadas, reflejándose así en las facturas</value>
+    </values>
+    <values>
+        <field>Tipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">X02</value>
+    </values>
+</CustomMetadata>

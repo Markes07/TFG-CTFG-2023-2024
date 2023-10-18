@@ -1,0 +1,177 @@
+.THIS .text-center {
+    text-align: center;
+}
+
+.THIS .element-item {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 47px;
+}
+
+.THIS .element-item2 {
+    margin-top: 15px;
+    margin-right: 47px;
+}
+
+.THIS .search-icon svg{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.THIS .contact-icon svg{
+    width: 22px;
+    height: 22px;
+    fill: rgb(255, 255, 255);
+    border-radius: .25rem;
+}
+
+.THIS .close-icon svg{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    fill: #888888;
+}
+
+.THIS .close-modal-icon svg{
+    fill: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+}
+
+.THIS .right-icon {
+    float: right;
+}
+
+.THIS .contact-input {
+    margin-left: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.THIS .contact-input:focus {
+    margin-left: 10px;
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    box-shadow: none;
+    background: transparent;
+}
+
+.THIS .contact-box {
+    border-radius: .25rem;
+    line-height: 1.875rem;
+    border: 1px solid rgb(221, 219, 218);
+    transition: border .1s linear,background-color .1s linear;
+    min-height: calc(2.125rem + 2px);
+}
+
+.THIS .contact-box:focus {
+    border-radius: .25rem;
+    line-height: 1.875rem;
+    border: 1px solid rgb(221, 219, 218);
+    transition: border .1s linear,background-color .1s linear;
+    min-height: calc(2.125rem + 2px);
+}
+
+.box.THIS {
+    background: rgb(255, 255, 255);
+}
+.THIS .picklist{
+    margin-top: -17px;
+    position: relative;
+}
+
+.THIS .icon-column{
+    width: 30px;
+    vertical-align: middle;
+}
+
+.THIS .name-row {
+    font-size: .8125rem;
+    margin-bottom: .125rem;
+}
+
+.THIS .role-row {
+    font-size: .75rem;
+    margin-top: -.25rem;
+    color: rgb(62, 62, 60);
+}
+
+.THIS .contact-option {
+    cursor: pointer;
+    height: 40px;
+}
+
+.THIS .contact-option:hover{
+    background-color: rgb(243, 242, 242);
+}
+
+.THIS .contact-list{
+    width: 33.5rem;
+    background: white;
+    position: absolute;
+    z-index: 12;
+}
+
+.THIS .selected-contact {
+    border: 1px solid #cccccc;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: block;
+    white-space: nowrap;
+}
+
+.THIS .selected-contact-icon {
+    width:40px !important;
+}
+
+.THIS .selected-contact-icon svg{
+    width:30px !important;
+}
+
+.THIS.right-button {
+    float: right;
+}
+
+.THIS.save-button{
+    margin-right: 31px;
+    margin-top: 12px;
+    background-color: rgba(27, 82, 151, 1.0);
+    border-color: rgba(27, 82, 151, 1.0);
+    color: rgb(255, 255, 255);
+}
+
+.THIS.save-button:hover{
+    margin-right: 31px;
+    margin-top: 12px;
+    background-color: rgba(0, 68, 135, 1.0);
+    border-color: rgba(0, 68, 135, 1.0);
+    color: rgb(255, 255, 255);
+}
+
+.THIS.close-button{
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.THIS .input-text {
+    margin-top: -17px;
+    position: relative;
+}
+
+.THIS .popoverclass {
+    min-height: 200px;
+    min-width: 50000px;
+    max-width: 5000px;
+}

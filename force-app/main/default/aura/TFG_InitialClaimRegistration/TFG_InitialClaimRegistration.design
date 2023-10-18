@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="recordId" label="caseId" />
+    <design:attribute name="accountId" label="accountId" />
+    <design:attribute name="selectedContactId" label="selectedContactId" />
+    <design:attribute name="comments" label="initalComments" />
+    <design:attribute name="formValidity" label="formValidity" />
+    <design:attribute name="ignoreReload" label="ignoreReload" />
+</design:component>

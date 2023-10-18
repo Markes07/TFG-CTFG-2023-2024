@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resultado__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Resultado</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Improcedente</fullName>
+                <default>true</default>
+                <label>Improcedente</label>
+            </value>
+            <value>
+                <fullName>Procedente</fullName>
+                <default>false</default>
+                <label>Procedente</label>
+            </value>
+            <value>
+                <fullName>Anulada</fullName>
+                <default>false</default>
+                <label>Anulada</label>
+            </value>
+            <value>
+                <fullName>No gestionable</fullName>
+                <default>false</default>
+                <label>No gestionable</label>
+            </value>
+            <value>
+                <fullName>Cancelado</fullName>
+                <default>false</default>
+                <label>Cancelado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

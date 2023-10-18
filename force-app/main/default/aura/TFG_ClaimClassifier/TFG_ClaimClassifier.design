@@ -1,0 +1,13 @@
+<design:component label="TFG_ClaimClassifier">
+    <design:attribute name="claimCase" label="claimCase" />
+    <design:attribute name="stringClaim" label="stringClaim" />
+    <design:attribute name="selectedType" label="selectedType" />
+    <design:attribute name="selectedCodeType" label="selectedCodeType" />
+    <design:attribute name="selectedSubtype" label="selectedSubtype" />
+    <design:attribute name="selectedCodeSubType" label="selectedCodeSubType" />
+    <design:attribute name="selectedClassSubType" label="selectedClassSubType" />
+    <design:attribute name="hasSorterChanged" label="hasSorterChanged" />
+    <design:attribute name="claimTimestampId" label="claimTimestampId" />
+    <design:attribute name="retrieveSorterInfo" label="retrieveSorterInfo" />
+    <design:attribute name="comments" label="initalComments" />
+</design:component>

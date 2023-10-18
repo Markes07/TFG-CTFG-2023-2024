@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X14</label>
+    <protected>false</protected>
+    <values>
+        <field>Activo__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Clase__c</field>
+        <value xsi:type="xsd:string">Reclamación</value>
+    </values>
+    <values>
+        <field>Descripcion_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">Cliente reclama por un abono que no entiende/que no ha recibido</value>
+    </values>
+    <values>
+        <field>Mensajeria_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">El cliente reclama que se le ha realizado un abono incorrecto en su cuenta o que no se le ha abonado una cantidad que está esperando. Revisa antes los abonos realizados y posibles abonos en otras facturas emitidas</value>
+    </values>
+    <values>
+        <field>Tipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">X03</value>
+    </values>
+</CustomMetadata>

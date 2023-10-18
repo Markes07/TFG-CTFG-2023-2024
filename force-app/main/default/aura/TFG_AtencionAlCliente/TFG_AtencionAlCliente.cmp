@@ -1,0 +1,39 @@
+<!--
+    @author     FJMG
+    @since      Mayo 27, 2023
+    @desc       Lightinig component for Atención al cliente
+    @history    mayo 27, 2023 - FJMG - Create Lightning Component
+-->
+<aura:component controller="TFG_AtencionAlCliente"
+    implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickActionWithoutHeader,force:hasSObjectName,force:LightningQuickAction,lightning:availableForFlowScreens"    
+    access="global">
+    <aura:attribute name="isSpinner" type="Boolean" default="false" />
+    <aura:attribute name="contactId" type="String"
+        description="Identificador del contacto de la interacción en curso" />
+    <aura:attribute name="accountId" type="String" description="Identificador del cliente relacionado" />
+    <aura:attribute name="contactName" type="String" description="nombre del contacto" />
+    <aura:attribute name="clientName" type="String" description="nombre del cliente" />
+    <aura:attribute name="contractSize" type="Integer" description="Número contratos del cliente" />
+    
+    <aura:attribute name="recId" type="Id" />
+    <aura:attribute name="colClass" type="String" default="slds-col slds-grow-none slds-m-bottom_x-small" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:quickActionAPI aura:id="quickActionAPI" />
+    <lightning:workspaceAPI aura:id="workspace" />
+
+
+    <div class="slds-grid slds-gutters col-margin">
+            <!-- Botón Nueva Reclamación -->
+            <div class="slds-col">
+                <div class="slds-grid slds-wrap slds-gutters_direct slds-m-bottom_xx-small"> 
+                    <div class="{!v.colClass}" data-item="Reclamacion">
+                        <lightning:button variant="brand" label="{!$Label.c.New_Claim}"  onclick="{!c.openTab}" iconName="utility:announcement"   />
+                    </div>
+                </div>
+            </div>
+    </div>
+    <aura:if isTrue="{!v.isSpinner}">
+        <lightning:spinner variant="brand" size="large" />
+    </aura:if>
+</aura:component>

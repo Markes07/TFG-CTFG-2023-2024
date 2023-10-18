@@ -1,0 +1,29 @@
+<!--
+  * @ComponentName	TFG_LookUp.cmp
+  * @description	Aura component search accounts in the system
+  * @author			FJMG
+  * @email			fran19943@gmail.com
+  * @version		V0.1
+  * @dateCreated	2023/05/13
+  * @lastChange		
+-->
+
+<aura:component controller="TFG_GetRecords" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+<aura:attribute name="Label" type="String" default="Cliente"/>
+<aura:attribute name="selectedAccountName" type="String"/>
+<aura:attribute name="selectedAccountId" type="String"/>
+<aura:attribute name="displayList" type="Boolean" default='true'/>
+<aura:attribute name="searchAccounts" type="List"/>
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:input  aura:id="userinput" label="{!v.Label}" name="searchText" onchange="{!c.searchField}" value="{!v.selectedAccountName}" class="leftspace" required="true"/> 
+    <aura:if isTrue="{!v.displayList}">
+    <div class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid">
+        <ul class="slds-listbox slds-listbox_vertical" >
+            <aura:iteration items="{!v.searchAccounts}" var="serecord" indexVar="hdtv">
+    <div id="{!serecord.Id}" data-name="{!serecord.Name}" onclick="{!c.setSelectedRecord}" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta">{!serecord.Name}</div>
+            </aura:iteration>
+        </ul>
+    </div>
+    </aura:if>
+</aura:component>

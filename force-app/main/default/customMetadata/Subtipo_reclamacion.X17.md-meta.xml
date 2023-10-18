@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X17</label>
+    <protected>false</protected>
+    <values>
+        <field>Activo__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Clase__c</field>
+        <value xsi:type="xsd:string">Reclamación</value>
+    </values>
+    <values>
+        <field>Descripcion_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">Incidencias en el trámite de la contratación para empleados</value>
+    </values>
+    <values>
+        <field>Mensajeria_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">De uso exclusivo para contrataciones de empleados de Ensing. El cliente reclama porque no cumplimos los plazos legales de activación de su solicitud de contrato, porque la potencia o la tensión son erróneas o porque no le hemos devuelto su fianza.</value>
+    </values>
+    <values>
+        <field>Tipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">X04</value>
+    </values>
+</CustomMetadata>

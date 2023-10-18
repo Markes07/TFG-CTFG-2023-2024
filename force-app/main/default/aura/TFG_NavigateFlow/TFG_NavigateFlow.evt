@@ -1,0 +1,9 @@
+<!--
+    @author     FJMG
+    @since      Junio 05, 2023
+    @desc       Lightinig Event for Flow
+    @history    Junio 05, 2023 - FJMG - Create Lightning Component
+-->
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="action" type="String"/>
+</aura:event>

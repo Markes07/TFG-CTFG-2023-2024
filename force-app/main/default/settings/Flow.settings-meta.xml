@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowSettings xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canDebugFlowAsAnotherUser>false</canDebugFlowAsAnotherUser>
+    <doesEnforceApexCpuTimeLimit>true</doesEnforceApexCpuTimeLimit>
+    <doesFormulaEnforceDataAccess>true</doesFormulaEnforceDataAccess>
+    <doesFormulaGenerateHtmlOutput>true</doesFormulaGenerateHtmlOutput>
+    <enableFlowBREncodedFixEnabled>true</enableFlowBREncodedFixEnabled>
+    <enableFlowCustomPropertyEditor>false</enableFlowCustomPropertyEditor>
+    <enableFlowDeployAsActiveEnabled>false</enableFlowDeployAsActiveEnabled>
+    <enableFlowFieldFilterEnabled>true</enableFlowFieldFilterEnabled>
+    <enableFlowFormulasFixEnabled>true</enableFlowFormulasFixEnabled>
+    <enableFlowInterviewSharingEnabled>true</enableFlowInterviewSharingEnabled>
+    <enableFlowNullPreviousValueFix>false</enableFlowNullPreviousValueFix>
+    <enableFlowPauseEnabled>false</enableFlowPauseEnabled>
+    <enableFlowUseApexExceptionEmail>false</enableFlowUseApexExceptionEmail>
+    <enableFlowViaRestUsesUserCtxt>true</enableFlowViaRestUsesUserCtxt>
+    <enableLightningRuntimeEnabled>true</enableLightningRuntimeEnabled>
+    <isAccessToInvokedApexRequired xsi:nil="true"/>
+    <isApexPluginAccessModifierRespected>true</isApexPluginAccessModifierRespected>
+    <isEnhancedFlowListViewVisible>true</isEnhancedFlowListViewVisible>
+    <isFlowApexContextRetired xsi:nil="true"/>
+    <isManageFlowRequiredForAutomationCharts>false</isManageFlowRequiredForAutomationCharts>
+    <isTimeResumedInSameRunContext>true</isTimeResumedInSameRunContext>
+</FlowSettings>

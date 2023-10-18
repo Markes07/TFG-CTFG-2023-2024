@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X37</label>
+    <protected>false</protected>
+    <values>
+        <field>Activo__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Clase__c</field>
+        <value xsi:type="xsd:string">Reclamación</value>
+    </values>
+    <values>
+        <field>Descripcion_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">Cliente reclama por recibir un aviso de Corte ó de Baja por impago y no tiene deuda</value>
+    </values>
+    <values>
+        <field>Mensajeria_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">El cliente reclama porque:  1. Ha recibido un corte de suministro con deuda dentro de plazo (revisa fecha fin de la obligación &quot;aviso de corte&quot;). 2. Ha recibido aviso de corte a pesar de haber realizado el pago (revisa si ya consta pagada, fecha de pago y cuando enviamos el aviso). Revisa acuses de recibo firmados si el cliente indica que desconocía la deuda</value>
+    </values>
+    <values>
+        <field>Tipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">X10</value>
+    </values>
+</CustomMetadata>

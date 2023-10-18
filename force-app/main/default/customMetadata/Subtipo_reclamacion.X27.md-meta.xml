@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X27</label>
+    <protected>false</protected>
+    <values>
+        <field>Activo__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Clase__c</field>
+        <value xsi:type="xsd:string">Reclamación</value>
+    </values>
+    <values>
+        <field>Descripcion_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">Cliente solicita instalación de patrón para comprobar medida</value>
+    </values>
+    <values>
+        <field>Mensajeria_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">El Cliente reclama que el contador que aparece en su factura no es suyo</value>
+    </values>
+    <values>
+        <field>Tipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">X06</value>
+    </values>
+</CustomMetadata>

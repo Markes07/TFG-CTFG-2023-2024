@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Correo electrónico que los usuarios reciben en su nuevo correo electrónico cuando cambia el correo electrónico</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Comunidades: Nuevo correo electrónico - Verificación de cambio de correo electrónico</name>
+    <style>none</style>
+    <subject>Finalizar el cambio de la dirección de correo electrónico de su cuenta de {!Community_Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

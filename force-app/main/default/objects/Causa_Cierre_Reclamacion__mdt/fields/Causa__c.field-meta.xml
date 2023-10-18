@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Causa__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Causa</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Venta Correcta existe soporte</fullName>
+                <default>true</default>
+                <label>Venta Correcta existe soporte</label>
+            </value>
+            <value>
+                <fullName>Venta comercial incorrecta</fullName>
+                <default>false</default>
+                <label>Venta comercial incorrecta</label>
+            </value>
+            <value>
+                <fullName>Datos insuficientes</fullName>
+                <default>false</default>
+                <label>Datos insuficientes</label>
+            </value>
+            <value>
+                <fullName>No recepción documentación</fullName>
+                <default>false</default>
+                <label>No recepción documentación</label>
+            </value>
+            <value>
+                <fullName>Potencia correcta</fullName>
+                <default>false</default>
+                <label>Potencia correcta</label>
+            </value>
+            <value>
+                <fullName>Error del Sistema</fullName>
+                <default>false</default>
+                <label>Error del Sistema</label>
+            </value>
+            <value>
+                <fullName>Cierre criterio distribuidora</fullName>
+                <default>false</default>
+                <label>Cierre criterio distribuidora</label>
+            </value>
+            <value>
+                <fullName>La devolución se efectuó correctamente</fullName>
+                <default>false</default>
+                <label>La devolución se efectuó correctamente</label>
+            </value>
+            <value>
+                <fullName>No procede devolver</fullName>
+                <default>false</default>
+                <label>No procede devolver</label>
+            </value>
+            <value>
+                <fullName>Se devuelve fianza</fullName>
+                <default>false</default>
+                <label>Se devuelve fianza</label>
+            </value>
+            <value>
+                <fullName>Actuación Correcta</fullName>
+                <default>false</default>
+                <label>Actuación Correcta</label>
+            </value>
+            <value>
+                <fullName>Acuerdo de Pago previo erróneo</fullName>
+                <default>false</default>
+                <label>Acuerdo de Pago previo erróneo</label>
+            </value>
+            <value>
+                <fullName>Acuerdo previo realizo correctamente</fullName>
+                <default>false</default>
+                <label>Acuerdo previo realizo correctamente</label>
+            </value>
+            <value>
+                <fullName>Acumulación facturas tras 60 días</fullName>
+                <default>false</default>
+                <label>Acumulación facturas tras 60 días</label>
+            </value>
+            <value>
+                <fullName>Alta correcta</fullName>
+                <default>false</default>
+                <label>Alta correcta</label>
+            </value>
+            <value>
+                <fullName>Alta errónea</fullName>
+                <default>false</default>
+                <label>Alta errónea</label>
+            </value>
+            <value>
+                <fullName>Anulación en curso o rechazada</fullName>
+                <default>false</default>
+                <label>Anulación en curso o rechazada</label>
+            </value>
+            <value>
+                <fullName>Aplic.deuda de entreg.a cuenta</fullName>
+                <default>false</default>
+                <label>Aplic.deuda de entreg.a cuenta</label>
+            </value>
+            <value>
+                <fullName>Aplicación Cobro</fullName>
+                <default>false</default>
+                <label>Aplicación Cobro</label>
+            </value>
+            <value>
+                <fullName>Atención Incorrecta</fullName>
+                <default>false</default>
+                <label>Atención Incorrecta</label>
+            </value>
+            <value>
+                <fullName>Baja correcta</fullName>
+                <default>false</default>
+                <label>Baja correcta</label>
+            </value>
+            <value>
+                <fullName>Baja diferida errónea</fullName>
+                <default>false</default>
+                <label>Baja diferida errónea</label>
+            </value>
+            <value>
+                <fullName>Baja en contrato erróneo</fullName>
+                <default>false</default>
+                <label>Baja en contrato erróneo</label>
+            </value>
+            <value>
+                <fullName>Baja por cambio titular erróneo</fullName>
+                <default>false</default>
+                <label>Baja por cambio titular erróneo</label>
+            </value>
+            <value>
+                <fullName>Baja por impago no procedente</fullName>
+                <default>false</default>
+                <label>Baja por impago no procedente</label>
+            </value>
+            <value>
+                <fullName>Cambio de email</fullName>
+                <default>false</default>
+                <label>Cambio de email</label>
+            </value>
+            <value>
+                <fullName>Cliente no colabora</fullName>
+                <default>false</default>
+                <label>Cliente no colabora</label>
+            </value>
+            <value>
+                <fullName>Cliente no localizado</fullName>
+                <default>false</default>
+                <label>Cliente no localizado</label>
+            </value>
+            <value>
+                <fullName>Cobro registrado correctamente</fullName>
+                <default>false</default>
+                <label>Cobro registrado correctamente</label>
+            </value>
+            <value>
+                <fullName>Cobro ya realizado</fullName>
+                <default>false</default>
+                <label>Cobro ya realizado</label>
+            </value>
+            <value>
+                <fullName>Consumo correcto</fullName>
+                <default>false</default>
+                <label>Consumo correcto</label>
+            </value>
+            <value>
+                <fullName>Consumo incorrecto</fullName>
+                <default>false</default>
+                <label>Consumo incorrecto</label>
+            </value>
+            <value>
+                <fullName>Contrato facturado</fullName>
+                <default>false</default>
+                <label>Contrato facturado</label>
+            </value>
+            <value>
+                <fullName>Contratos que no veo y me corresponden</fullName>
+                <default>false</default>
+                <label>Contratos que no veo y me corresponden</label>
+            </value>
+            <value>
+                <fullName>Contratos que veo y no me corresponden</fullName>
+                <default>false</default>
+                <label>Contratos que veo y no me corresponden</label>
+            </value>
+            <value>
+                <fullName>Cuenta de ingreso errónea</fullName>
+                <default>false</default>
+                <label>Cuenta de ingreso errónea</label>
+            </value>
+            <value>
+                <fullName>Derechos Contratación correctos</fullName>
+                <default>false</default>
+                <label>Derechos Contratación correctos</label>
+            </value>
+            <value>
+                <fullName>Desconocimiento usuario</fullName>
+                <default>false</default>
+                <label>Desconocimiento usuario</label>
+            </value>
+            <value>
+                <fullName>Desestimiento fuera de plazo</fullName>
+                <default>false</default>
+                <label>Desestimiento fuera de plazo</label>
+            </value>
+            <value>
+                <fullName>Desestimiento no recibido</fullName>
+                <default>false</default>
+                <label>Desestimiento no recibido</label>
+            </value>
+            <value>
+                <fullName>Desistimiento no atendido</fullName>
+                <default>false</default>
+                <label>Desistimiento no atendido</label>
+            </value>
+            <value>
+                <fullName>Devolución correcta</fullName>
+                <default>false</default>
+                <label>Devolución correcta</label>
+            </value>
+            <value>
+                <fullName>Documentación incompleta</fullName>
+                <default>false</default>
+                <label>Documentación incompleta</label>
+            </value>
+            <value>
+                <fullName>Error aviso de corte</fullName>
+                <default>false</default>
+                <label>Error aviso de corte</label>
+            </value>
+            <value>
+                <fullName>Error baja usuario</fullName>
+                <default>false</default>
+                <label>Error baja usuario</label>
+            </value>
+            <value>
+                <fullName>Error Cobro</fullName>
+                <default>false</default>
+                <label>Error Cobro</label>
+            </value>
+            <value>
+                <fullName>Error en Potencia</fullName>
+                <default>false</default>
+                <label>Error en Potencia</label>
+            </value>
+            <value>
+                <fullName>Error en Titularidad</fullName>
+                <default>false</default>
+                <label>Error en Titularidad</label>
+            </value>
+            <value>
+                <fullName>Facturación errónea</fullName>
+                <default>false</default>
+                <label>Facturación errónea</label>
+            </value>
+            <value>
+                <fullName>Facturas de otro cliente</fullName>
+                <default>false</default>
+                <label>Facturas de otro cliente</label>
+            </value>
+            <value>
+                <fullName>Facturas no abonadas</fullName>
+                <default>false</default>
+                <label>Facturas no abonadas</label>
+            </value>
+            <value>
+                <fullName>Falta de información</fullName>
+                <default>false</default>
+                <label>Falta de información</label>
+            </value>
+            <value>
+                <fullName>Imputable a banco</fullName>
+                <default>false</default>
+                <label>Imputable a banco</label>
+            </value>
+            <value>
+                <fullName>Incidencia Sistema</fullName>
+                <default>false</default>
+                <label>Incidencia Sistema</label>
+            </value>
+            <value>
+                <fullName>Inscripción incorrecta</fullName>
+                <default>false</default>
+                <label>Inscripción incorrecta</label>
+            </value>
+            <value>
+                <fullName>Lectura estimada incorrecta</fullName>
+                <default>false</default>
+                <label>Lectura estimada incorrecta</label>
+            </value>
+            <value>
+                <fullName>Lectura aportada errónea.</fullName>
+                <default>false</default>
+                <label>Lectura aportada errónea.</label>
+            </value>
+            <value>
+                <fullName>Lectura estimada correcta</fullName>
+                <default>false</default>
+                <label>Lectura estimada correcta</label>
+            </value>
+            <value>
+                <fullName>NIF/Razón social correcto</fullName>
+                <default>false</default>
+                <label>NIF/Razón social correcto</label>
+            </value>
+            <value>
+                <fullName>No me llegan las facturas</fullName>
+                <default>false</default>
+                <label>No me llegan las facturas</label>
+            </value>
+            <value>
+                <fullName>Refacturación anterior correcta</fullName>
+                <default>false</default>
+                <label>Refacturación anterior correcta</label>
+            </value>
+            <value>
+                <fullName>Refacturación anterior incorrecta</fullName>
+                <default>false</default>
+                <label>Refacturación anterior incorrecta</label>
+            </value>
+            <value>
+                <fullName>Solicitud denegada</fullName>
+                <default>false</default>
+                <label>Solicitud denegada</label>
+            </value>
+            <value>
+                <fullName>Solicitud aprobada</fullName>
+                <default>false</default>
+                <label>Solicitud aprobada</label>
+            </value>
+            <value>
+                <fullName>Solicitud anulada</fullName>
+                <default>false</default>
+                <label>Solicitud anulada</label>
+            </value>
+            <value>
+                <fullName>Cierre técnico</fullName>
+                <default>false</default>
+                <label>Cierre técnico</label>
+            </value>
+            <value>
+                <fullName>Retraso por Incidencias</fullName>
+                <default>false</default>
+                <label>Retraso por Incidencias</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

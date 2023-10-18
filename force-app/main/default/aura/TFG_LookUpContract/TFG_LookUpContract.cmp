@@ -1,0 +1,120 @@
+<!--
+  * @ComponentName	TFG_LookUpContract.cmp
+  * @description	Aura component to search contracts related to the client in the system
+  * @author			FJMG
+  * @email			fran19943@gmail.com
+  * @version		V0.1
+  * @dateCreated	2023/06/15
+  * @lastChange		
+-->
+
+<aura:component controller="TFG_GetRecordsContracts" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!--declare attributes-->
+    <aura:attribute name="selectedRecord" type="sObject" default="{}"
+        description="Use,for store SELECTED sObject Record" />
+    <aura:attribute name="value" type="String" description="Id from search term result" />
+    <aura:attribute name="listOfSearchRecords" type="List"
+        description="Use,for store the list of search records which returns from apex class" access="PUBLIC"/>
+    <aura:attribute name="searchKeyWord" type="String" default="" /> 
+    <aura:attribute name="placeholderValue" type="String" default="{!$Label.c.Visualiza_Contrato}" />
+
+    <aura:attribute name="parentId" type="String" default="" />
+    <aura:attribute name="accountId" type="String" default="" />
+    <aura:attribute name="searchFields" type="String" description="List API Name of the object field" />
+    <aura:attribute name="query" type="String" description="Query to filtering the search" />
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="required" type="Boolean" default="false" />
+    <aura:attribute name="filter" type="String" description="API Name of field to filter" />
+    <aura:attribute name="orderBy" type="String" description="API Name of field to order by" />
+
+    <aura:attribute name="IconName" type="String" default="" />
+    <aura:attribute name="label" type="String" default="" />
+    <aura:attribute name="message" type="String" default="" />
+    <aura:attribute name="errorMsg" type="String" />
+    <aura:attribute name="isClear" type="Boolean" default="false" />
+    <aura:attribute name="initialised" type="Boolean" default="false" access="PUBLIC" />
+    <aura:attribute name="onChange" type="Aura.Action" default="{!c.defaultOnChange}" />
+
+    <aura:attribute name="skipHandleComponentEvent" type="Boolean" default="false" />
+    <aura:attribute name="hasFocus" type="Boolean" default="false" />
+
+    <!--declare events hendlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="oSelectedRecordEvent" event="c:TFG_SelectedRecordEvent" action="{!c.handleComponentEvent}" />
+    <aura:handler name="change" value="{!v.value}" action="{!c.doInit}" />
+    <aura:handler name="change" value="{!v.value}" action="{!v.onChange}" />
+    <aura:method name="setError" action="{!c.setError}" access="PUBLIC">
+        <aura:attribute name="errorMsg" type="String" default="" />
+    </aura:method>
+    <aura:method name="setClear" action="{!c.clear}" access="PUBLIC">
+        <aura:attribute name="skip" type="Boolean" default="" />
+    </aura:method>
+    <aura:method name="setSkipHandleComponentEvent" action="{!c.setSkipHandleComponentEvent}" access="PUBLIC">
+        <aura:attribute name="skip" type="Boolean" default="" />
+    </aura:method>
+    <aura:method name="removePill" action="{!c.clear}" access="PUBLIC" />
+    <aura:method name="focusBlurParent" action="{!c.onFocusBlur}" access="PUBLIC" />
+
+    <div aura:id="searchRes" class="slds-form-element slds-lookup slds-is-close" data-select="single">
+        <aura:if isTrue="{!v.required}">
+            <abbr class="slds-required" title="required">*</abbr>
+        </aura:if>
+        <label class=" slds-form-element__label" for="lookup-348">{!v.label}</label>
+        <!--This part is for display search bar for lookup-->
+        <div class="slds-form-element__control">
+            <div class=" slds-input-has-icon slds-input-has-icon--left ">
+                <!-- This markup is for when an record is selected -->
+                <div aura:id="lookup-pill" class="slds-pill-container slds-hide">
+                    <lightning:pill class="{!v.required ? 'pillSizeRequired' : 'pillSize'}" label="{!v.selectedRecord.ContractNumber}" name="{!v.selectedRecord.ContractNumber}"
+                        onremove="{!c.clear}">
+                        <aura:set attribute="media">
+                            <lightning:icon iconName="{!v.IconName}" size="x-small" alternativeText="{!v.IconName}" />
+                        </aura:set>
+                    </lightning:pill>
+                </div>
+
+                <div aura:id="lookupField" class="slds-combobox_container slds-show">
+                    <lightning:input label="{!v.label}" onkeyup="{!c.keyPressController}" onclick="{!c.onFocusBlur}"
+                        aura:id="lookupInput" type="search" value="{!v.searchKeyWord}" disabled="{!v.disabled}"
+                        placeholder="{!v.placeholderValue}" variant="label-hidden" />
+                </div>
+            </div>
+            <aura:if isTrue="{!v.required}">
+                <div id="error-message" class="slds-form-element__help">{!v.errorMsg}</div>
+            </aura:if>
+        </div>
+
+        <!--This part is for Display typehead lookup result List-->
+        <ul style="min-height:40px;margin-top:0px !important"
+            class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-lookup__menu slds-lookup__list slds"
+            role="listbox">
+            <lightning:spinner class="slds-hide" variant="brand" size="small" aura:id="mySpinner" />
+            <table
+                class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-heading--label ">
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Contract_Number}">
+                                {!$Label.c.Contract_Number}</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Status}">{!$Label.c.Status}</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Fecha_inicio}">{!$Label.c.Fecha_inicio}</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="{!$Label.c.Fecha_fin}">{!$Label.c.Fecha_fin}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.listOfSearchRecords}" var="singleRec">
+                        <c:TFG_CustomLookupResult oRecord="{!singleRec}" parentId="{!v.parentId}"
+                            IconName="{!v.IconName}" />
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </ul>
+    </div>
+</aura:component>

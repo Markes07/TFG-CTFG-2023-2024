@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NIFAgenteReclamaciones</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (ISCHANGED (NIF__c), $Profile.Id=&apos;00e09000000G6f0AAC&apos;)</errorConditionFormula>
+    <errorMessage>No tienes permisos para cambiar el campo NIF</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<aura:component extensible="true">
+    <lightning:notificationsLibrary aura:id="notifLib" />
+    <div>
+        {!v.body}
+        <lightning:spinner class="slds-hide"
+                           variant="brand" 
+                           size="medium"
+                           aura:id="baseComponentSpinner"
+                           alternativeText="{!$Label.c.Loading}" />         
+    </div>	
+</aura:component>

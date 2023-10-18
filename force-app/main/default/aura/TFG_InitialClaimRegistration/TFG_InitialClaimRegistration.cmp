@@ -1,0 +1,119 @@
+<!--
+    @author     FJMG
+    @since      Junio 05, 2023
+    @desc       Lightinig component for Step1 - Inicio Registro de la Reclamación
+    @history    Junio 05, 2023 - FJMG - Create Lightning Component
+-->
+<aura:component description="TFG_InitialClaimRegistration"
+                controller="TFG_InitialClaimRegistration"
+                implements="lightning:availableForFlowScreens,force:hasRecordId"
+                extends="c:TFG_BaseComponent"
+                access="global">
+
+    <aura:attribute name="accountId" type="String"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="contacts" type="List"/>
+    <aura:attribute name="selectedContactId" type="String"/>
+    <aura:attribute name="selectedOptionContactId" type="String"/>
+    <aura:attribute name="comments" type="String"/>
+    <aura:attribute name="formValidity" type="Boolean"/>
+    <aura:attribute name="ignoreReload" type="Boolean" default="false"/>
+    <aura:attribute name="unableCheck" type="Boolean" default="false"/>
+    <aura:attribute name="readOnlyCheck" type="Boolean" default="false"/>
+    <aura:attribute name="MaximumSizeCommentOpening" type="String"/>
+    <aura:attribute name="isVisibleMaxLenghtMessage" type="Boolean" default="false"/>   
+    <aura:attribute name="recId" type="Id"/> 
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>   
+
+   <lightning:workspaceAPI aura:id="workspace" />
+   <lightning:overlayLibrary aura:id="overlayLib" />
+    
+    <div id="claimRegistarInnerFlowContainer">
+        <lightning:card >
+            <c:TFG_AccountInfo accountId="{!v.accountId}" contactId="{!v.selectedContactId}"/>
+            
+            <div class="slds-box c-container slds-p-right--x-small slds-p-left--x-large slds-m-top--medium">
+              
+                <h3 class="slds-section-title--divider">
+                    {!$Label.c.Persona_que_contacta}
+                </h3>
+                <div>
+                    <div class="slds-form slds-form_stacked ">
+                        <lightning:layoutItem size="12" flexibility="auto"
+                                              class="slds-m-top--medium"
+                                              padding="horizontal-medium"
+                                              aura:id="selectContact">
+                        <lightning:select label="{!$Label.c.Nombre_y_apellidos}"
+                                          value="{!v.selectedOptionContactId}"
+                                          onchange="{!c.changeConctact}"
+                                          class="slds-m-bottom_x-small">
+                            <aura:iteration items="{!v.contacts}" var="contact">
+                                <option value="{!contact.Id}" selected="{! contact.Id==v.selectedOptionContactId}">{!contact.FirstName}&nbsp;{!contact.LastName}</option>
+                            </aura:iteration>
+                        </lightning:select>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12" flexibility="auto"
+                                              class="slds-m-top--medium"
+                                              padding="horizontal-medium"
+                                              aura:id="contactDetail">
+                            <lightning:recordViewForm recordId="{!v.selectedOptionContactId}"
+                                                      objectApiName="Contact">
+                                <lightning:layout multipleRows="true" verticalAlign="stretch"
+                                                  pullToBoundary="medium">
+                                    <lightning:layoutItem size="4" flexibility="auto" class="slds-m-top--medium"
+                                                          padding="horizontal-medium">
+                                        <lightning:outputField fieldName="NIF__c" />
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="4" flexibility="auto" class="slds-m-top--medium"
+                                                          padding="horizontal-medium">
+                                        <lightning:outputField fieldName="Metodo_contacto__c"/>
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="4" flexibility="auto" class="slds-m-top--medium"
+                                                          padding="horizontal-medium">
+                                        <lightning:outputField fieldName="Email" />
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="4" flexibility="auto" class="slds-m-top--medium"
+                                                          padding="horizontal-medium">
+                                        <lightning:outputField fieldName="Telefono__c"/>
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="4" flexibility="auto" class="slds-m-top--medium"
+                                                          padding="horizontal-medium">
+                                        <lightning:outputField fieldName="Rol__c"/>
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="4" flexibility="auto" class="slds-m-top--medium"
+                                                          padding="horizontal-medium">
+                                        <lightning:outputField fieldName="Direccion__c"/>
+                                    </lightning:layoutItem>
+                               </lightning:layout>
+                            </lightning:recordViewForm>
+                        </lightning:layoutItem>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-box slds-m-top--medium infoProvider"> 
+              <h3 class="slds-section-title--divider">
+                    {!$Label.c.Information_provided}
+                </h3>
+                <div>
+                    <div class="slds-form slds-form_stacked slds-m-top--medium ">
+                        <lightning:textarea aura:id="step1Form"
+                                            label="{!$Label.c.Comentarios_Apertura}"
+                                            placeholder="{!$Label.c.Maximun_size_comment_text}"
+                                            minlength="{!$Label.c.Minimun_size_comment_opening}"
+                                            maxlength="{!$Label.c.Maximun_size_comment_opening}"
+                                            value="{!v.comments}"
+                                            required="true"
+                                            onchange = "{!c.handleChangeComment}"/>
+                        <aura:if isTrue="{!v.isVisibleMaxLenghtMessage}"> 
+                        	<div class="slds-form-element__help" style="color:rgb(194 57 52); margin-bottom: 10px;">{!$Label.c.Maximum_Size_Message}</div>
+                        </aura:if>
+                    </div>             
+                </div>
+            </div>           
+            
+        </lightning:card>
+        <c:TFG_FlowFooter availableActions="{!v.availableActions}"
+                             navigateFlowEvent="{!c.handleNavigate}"/>
+    </div>
+</aura:component>

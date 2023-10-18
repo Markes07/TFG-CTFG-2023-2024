@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Texto Resolviendo</label>
+    <protected>false</protected>
+    <values>
+        <field>Estado__c</field>
+        <value xsi:type="xsd:string">Resolviendo</value>
+    </values>
+    <values>
+        <field>Texto__c</field>
+        <value xsi:type="xsd:string">está siendo activamente atendida y resuelta por nuestros agentes. Nuestro compromiso es encontrar una solución satisfactoria para su reclamación.</value>
+    </values>
+</CustomMetadata>

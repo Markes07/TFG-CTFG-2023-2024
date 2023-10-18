@@ -1,0 +1,87 @@
+<!--
+    @author     FJMG
+    @since      Junio 05, 2023
+    @desc       Lightinig component for Account information
+    @history    Junio 05, 2023 - FJMG - Create Lightning Component
+-->
+
+<aura:component description="TFG_AccountInfo"
+                implements="lightning:availableForFlowScreens"
+                access="global">
+    <aura:attribute name="accountId" type="String" access="global" />
+    <aura:attribute name="contactId" type="String" access="global" />
+    
+    <lightning:workspaceAPI aura:id="workspace" />
+    
+    <!--Detail panel-->
+    <lightning:card>
+        <div class="card-background slds-p-around--x-small slds-m-around--medium">
+            <lightning:layout multipleRows="true" horizontalAlign="spread">
+                <lightning:layoutItem size="12" flexibility="auto"
+                                      padding="horizontal-small"
+                                      aura:id="contactDetail">
+                    <lightning:recordViewForm recordId="{!v.accountId}"
+                                              objectApiName="Account">
+                        <lightning:layout verticalAlign="stretch"
+                                          pullToBoundary="small">
+                            <lightning:layoutItem size="4" flexibility="grow"
+                                                  padding="horizontal-small">
+                                <span class="slds-form-element__label" lightning-output-field_output-field="">{!$Label.c.Cliente}</span>
+                                <a href="#" onclick="{!c.navegarCliente}" class="output-lookup">
+                                    <lightning:outputField variant="label-hidden" fieldName="Name" />
+                                </a>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2" flexibility="auto"
+                                                  padding="horizontal-small">
+                                <lightning:outputField fieldName="NIF__c"/>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2" flexibility="auto"
+                                                  padding="horizontal-small">
+                                <lightning:outputField fieldName="Metodo_contacto__c"/>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2" flexibility="auto"
+                                                  padding="horizontal-small">
+                                <lightning:outputField fieldName="Telefono__c"/>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2" flexibility="auto"
+                                                  padding="horizontal-small">
+                                <lightning:outputField fieldName="Email__c"/>
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                    </lightning:recordViewForm>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="12" flexibility="auto" class="slds-m-top--medium"
+                                      padding="horizontal-small"
+                                      aura:id="contactDetail">
+                    <lightning:recordViewForm recordId="{!v.contactId}"
+                                              objectApiName="Contact">
+                        <lightning:layout verticalAlign="stretch"
+                                          pullToBoundary="small">
+                            <lightning:layoutItem size="4" padding="horizontal-small">
+                                <lightning:outputField fieldName="Name" />
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2" padding="horizontal-small">
+                                <lightning:outputField fieldName="NIF__c" />
+                            </lightning:layoutItem>            
+                            <lightning:layoutItem size="2" padding="horizontal-small">
+                                <lightning:outputField fieldName="Metodo_contacto__c" />
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2" padding="horizontal-small">
+                                <lightning:outputField fieldName="Telefono__c" />
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="2" padding="horizontal-small">
+                                <lightning:outputField fieldName="Email" />
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                        <lightning:layout verticalAlign="stretch"
+                                          pullToBoundary="small">
+                            <lightning:layoutItem size="2" padding="horizontal-small">
+                                <lightning:outputField fieldName="Rol__c" />
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                    </lightning:recordViewForm>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+    </lightning:card>
+</aura:component>

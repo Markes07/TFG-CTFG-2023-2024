@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Texto En Espera Cliente</label>
+    <protected>false</protected>
+    <values>
+        <field>Estado__c</field>
+        <value xsi:type="xsd:string">Espera Cliente</value>
+    </values>
+    <values>
+        <field>Texto__c</field>
+        <value xsi:type="xsd:string">está en espera de respuesta o información adicional por su parte para avanzar en su resolución.</value>
+    </values>
+</CustomMetadata>

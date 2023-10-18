@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Estado</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recibida</fullName>
+                <default>true</default>
+                <label>Recibida</label>
+            </value>
+            <value>
+                <fullName>En análisis</fullName>
+                <default>false</default>
+                <label>En análisis</label>
+            </value>
+            <value>
+                <fullName>Espera Cliente</fullName>
+                <default>false</default>
+                <label>Espera Cliente</label>
+            </value>
+            <value>
+                <fullName>Resolviendo</fullName>
+                <default>false</default>
+                <label>Resolviendo</label>
+            </value>
+            <value>
+                <fullName>Últimas Comprobaciones</fullName>
+                <default>false</default>
+                <label>Últimas Comprobaciones</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

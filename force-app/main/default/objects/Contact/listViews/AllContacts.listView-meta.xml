@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllContacts</fullName>
+    <columns>NIF__c</columns>
+    <columns>Nombre__c</columns>
+    <columns>Apellidos__c</columns>
+    <columns>Metodo_contacto__c</columns>
+    <columns>Telefono__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Direccion__c</columns>
+    <columns>Rol__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todos los contactos</label>
+</ListView>

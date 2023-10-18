@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_Reclamacion__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo Reclamación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>X01</fullName>
+                <default>false</default>
+                <label>Atención al cliente</label>
+            </value>
+            <value>
+                <fullName>X02</fullName>
+                <default>false</default>
+                <label>Facturación</label>
+            </value>
+            <value>
+                <fullName>X03</fullName>
+                <default>false</default>
+                <label>Cobros</label>
+            </value>
+            <value>
+                <fullName>X04</fullName>
+                <default>false</default>
+                <label>Contratación (Distribuidora)</label>
+            </value>
+            <value>
+                <fullName>X05</fullName>
+                <default>false</default>
+                <label>Contratación (Comercializadora)</label>
+            </value>
+            <value>
+                <fullName>X06</fullName>
+                <default>false</default>
+                <label>Equipos de Medida</label>
+            </value>
+            <value>
+                <fullName>X07</fullName>
+                <default>false</default>
+                <label>Instalaciones del Distribuidor en mal estado</label>
+            </value>
+            <value>
+                <fullName>X08</fullName>
+                <default>false</default>
+                <label>Ventas</label>
+            </value>
+            <value>
+                <fullName>X09</fullName>
+                <default>false</default>
+                <label>Phishing</label>
+            </value>
+            <value>
+                <fullName>X10</fullName>
+                <default>false</default>
+                <label>Corte/Baja por Impago</label>
+            </value>
+            <value>
+                <fullName>X11</fullName>
+                <default>false</default>
+                <label>Consumo/Lectura</label>
+            </value>
+            <value>
+                <fullName>X12</fullName>
+                <default>false</default>
+                <label>Daños causados a cliente por el distribuidor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

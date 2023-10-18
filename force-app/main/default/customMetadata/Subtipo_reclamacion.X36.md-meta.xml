@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>X36</label>
+    <protected>false</protected>
+    <values>
+        <field>Activo__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Clase__c</field>
+        <value xsi:type="xsd:string">Reclamación</value>
+    </values>
+    <values>
+        <field>Descripcion_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">Cliente reclama por Retraso en Reenganche tras abonar la deuda</value>
+    </values>
+    <values>
+        <field>Mensajeria_Subtipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">El cliente ha abonado la deuda y no se le ha realizado el reenganche. Comprueba que han pasado más de 24h desde que realizó el pago (Electricidad) o más de 48h (Gas). Añade en observaciones la fecha y hora del pago y solicítale al cliente que remita el justificante de pago al fax 123.456.789 o a través del correo electrónico documentopago@EnsignHome.es</value>
+    </values>
+    <values>
+        <field>Tipo_Reclamacion__c</field>
+        <value xsi:type="xsd:string">X10</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- TFG Gestor Reclamaciones --></label>
+        <name>TFG_Manage_Claims</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Cancel Process --></label>
+        <name>Cancel_Process</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clarification SubType --></label>
+        <name>Clarification_SubType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clarification Type --></label>
+        <name>Clarification_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cliente --></label>
+        <name>Cliente</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Comentarios Apertura --></label>
+        <name>Comentarios_Apertura</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CompleteField --></label>
+        <name>CompleteField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract Number --></label>
+        <name>Contract_Number</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract data --></label>
+        <name>Contract_data</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Exit Confirmation --></label>
+        <name>Exit_Confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fecha fin --></label>
+        <name>Fecha_fin</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fecha inicio --></label>
+        <name>Fecha_inicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GenericErrorTitle --></label>
+        <name>GenericErrorTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Incomplete Request --></label>
+        <name>Incomplete_Request</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Information provided --></label>
+        <name>Information_provided</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading --></label>
+        <name>Loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Maximum Size Message --></label>
+        <name>Maximum_Size_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Maximum Size Observaciones Message --></label>
+        <name>Maximum_Size_Observaciones_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Maximum size observations text --></label>
+        <name>Maximum_size_observations_text</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Maximun size comment opening --></label>
+        <name>Maximun_size_comment_opening</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Maximun size comment text --></label>
+        <name>Maximun_size_comment_text</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Minimun size comment close --></label>
+        <name>Minimun_size_comment_close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Minimun size comment opening --></label>
+        <name>Minimun_size_comment_opening</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nueva Reclamación --></label>
+        <name>New_Claim</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next --></label>
+        <name>Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No --></label>
+        <name>No</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No resultados --></label>
+        <name>No_resultados</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nombre y apellidos --></label>
+        <name>Nombre_y_apellidos</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Observaciones --></label>
+        <name>Observaciones</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Observaciones Adicionales --></label>
+        <name>Observaciones_Adicionales</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Pause --></label>
+        <name>Pause</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Persona que contacta --></label>
+        <name>Persona_que_contacta</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previous --></label>
+        <name>Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Required Fields --></label>
+        <name>Required_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Rol --></label>
+        <name>Rol</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search --></label>
+        <name>Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select option --></label>
+        <name>Select_option</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selection Required --></label>
+        <name>Selection_Required</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SizeObservaciones --></label>
+        <name>SizeObservaciones</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status --></label>
+        <name>Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Subtype Claim --></label>
+        <name>Subtype_Claim</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Type Claim --></label>
+        <name>Type_Claim</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UnknownError --></label>
+        <name>UnknownError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Visualiza Contrato --></label>
+        <name>Visualiza_Contrato</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Yes --></label>
+        <name>Yes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- whatsAppIdentifierNumber --></label>
+        <name>whatsAppIdentifierNumber</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- whatsAppToken --></label>
+        <name>whatsAppToken</name>
+    </customLabels>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>AccountInfo</name>
+                </fields>
+                <fields>
+                    <name>ProgressIndicador</name>
+                </fields>
+                <fields>
+                    <name>TFG_ClaimClassifier</name>
+                </fields>
+                <name>ClaimClassifier</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>InitialClaimRegistration</name>
+                </fields>
+                <fields>
+                    <name>ProgressIndicator</name>
+                </fields>
+                <name>Registro_de_reclamacion</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>AccountInfoLastStage</name>
+                </fields>
+                <fields>
+                    <name>RequiredFieldsForm</name>
+                </fields>
+                <fields>
+                    <name>StepFinal</name>
+                </fields>
+                <name>RequiredData</name>
+            </screens>
+            <stages>
+                <name>Clasificacion_de_la_Reclamacion</name>
+            </stages>
+            <stages>
+                <name>Informacion_necesaria</name>
+            </stages>
+            <stages>
+                <name>Inicio_Registro_de_la_Reclamacion</name>
+            </stages>
+        </flows>
+        <fullName>TFG_FLW_Registro_de_Reclamacion</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Flujos de pantalla --></description>
+        <label><!-- Flujos de pantalla --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Entradas de registro de entrevistas de flujo --></label>
+            <name>Entradas de registro de entrevistas de flujo</name>
+        </sections>
+        <sections>
+            <label><!-- Registros de entrevistas de flujo --></label>
+            <name>Registros de entrevistas de flujo</name>
+        </sections>
+    </reportTypes>
+</Translations>

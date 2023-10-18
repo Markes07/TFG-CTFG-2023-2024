@@ -1,0 +1,11 @@
+<aura:component implements="lightning:isUrlAddressable">
+    <aura:attribute name="flowName" type="String" />
+    <aura:attribute name="flowInput" type="List" />
+    <aura:attribute name="pageReference" type="Object" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <lightning:card class="slds-p-around_x-small">
+        <lightning:flow aura:id="flow" />
+    </lightning:card>
+
+</aura:component>

@@ -1,0 +1,13 @@
+<design:component>
+    <design:attribute name="selectedType" label="selectedType"
+                      description="Selected type"/>
+    <design:attribute name="selectedSubType" label="selectedSubType"
+                      description="Selected subtype"/>
+    <design:attribute name="selectedClassSubtype" label="selectedClassSubtype" />
+    <design:attribute name="accountId" label="AccountId" />
+    <design:attribute name="contactId" label="contactId" />
+    <design:attribute name="contractId" label="contractId" /> 
+    <design:attribute name="additionalObservations" label="additionalObservations" />
+    <design:attribute name="newClaim" label="newClaim" /> 
+    <design:attribute name="comments" label="initalComments" />
+</design:component>

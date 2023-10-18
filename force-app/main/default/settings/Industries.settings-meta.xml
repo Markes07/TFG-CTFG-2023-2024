@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndustriesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <appointmentDistributionOrgPref>false</appointmentDistributionOrgPref>
+    <enableAccountScoreEnabled>false</enableAccountScoreEnabled>
+    <enableAppInviteOrgPref>false</enableAppInviteOrgPref>
+    <enableEventManagementOrgPref>false</enableEventManagementOrgPref>
+    <enableEventWriteOrgPref>false</enableEventWriteOrgPref>
+    <enableMultiResourceOrgPref>false</enableMultiResourceOrgPref>
+    <enableOverbookingOrgPref>false</enableOverbookingOrgPref>
+    <enableShareSaWithArOrgPref>false</enableShareSaWithArOrgPref>
+    <enableTopicTimeSlot>false</enableTopicTimeSlot>
+    <rlaEditIfAccHasEdit>false</rlaEditIfAccHasEdit>
+</IndustriesSettings>

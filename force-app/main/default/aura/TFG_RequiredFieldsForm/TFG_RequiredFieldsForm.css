@@ -1,0 +1,56 @@
+.THIS .outter-card {
+    border:none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.THIS.lightning-helptext {
+    display: none;
+}
+
+.THIS .lightning-checkbox input {
+    color: transparent;
+    text-shadow: 0 0 0 black;
+}
+
+.THIS .slds-section-title--divider{
+        font-weight: bold;
+}
+
+.THIS .pillClass .slds-pill__remove {
+        display: none;
+}
+
+.THIS .slds-accordion__summary-heading {
+    font-weight: bold;
+    background-color: #F3F3F3;
+    padding: 5px;
+}
+
+.THIS .slds-card__header.slds-grid {
+    padding: 0px;
+}
+
+.THIS .slds-m-around_small {
+    margin-top: 0px;
+}
+
+.THIS .slds-m-around--small {
+    margin-top: 0px;
+}
+
+.THIS .slds-accordion__list-item {
+    border: 0px;
+}
+
+.THIS .miRequired .slds-select {
+    border-color: var(--lwc-colorBorderError,rgb(234, 0, 30));
+    box-shadow: var(--lwc-colorBorderError,rgb(234, 0, 30)) 0 0 0 var(--lwc-borderWidthThin,1px) inset;
+    background-clip: padding-box;
+}
+
+.THIS .miRequired .slds-input {
+    border-color: var(--lwc-colorBorderError,rgb(234, 0, 30));
+    box-shadow: var(--lwc-colorBorderError,rgb(234, 0, 30)) 0 0 0 var(--lwc-borderWidthThin,1px) inset;
+    background-clip: padding-box;
+}

@@ -1,0 +1,34 @@
+.THIS h3 {
+    background-color: #FFFFFF;  
+}
+
+.THIS .outter-card {
+    border:none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.THIS lightning-helptext {
+    display: none;
+}
+.THIS .slds-section-title--divider{
+    font-weight: bold;
+}
+
+.THIS .infoProvider.slds-box {
+    padding: 6px;
+    margin-top:12px;
+}
+
+
+.THIS .slds-m-top--medium.slds-p-right_medium.slds-p-left_medium.slds-col.slds-size_4-of-12 {
+    margin-top: 2px;
+}
+
+.THIS .slds-textarea:required {
+    background-color: var(--sds-c-textarea-color-background, var(--lwc-colorBackgroundInput,rgb(255, 255, 255)));
+    border-color: var(--lwc-colorBorderError,rgb(234, 0, 30));
+    color: var(--sds-c-textarea-text-color);
+    box-shadow: var(--lwc-colorBorderError,rgb(234, 0, 30)) 0 0 0 var(--lwc-borderWidthThin,1px) inset;
+    background-clip: padding-box;
+}

@@ -1,0 +1,10 @@
+.THIS .pillSize{
+    width : 100%;
+}
+               
+.THIS .pillSizeRequired{
+    width : 100%;
+   border-color: var(--lwc-colorBorderError,rgb(234, 0, 30));
+   box-shadow: var(--lwc-colorBorderError,rgb(234, 0, 30)) 0 0 0 var(--lwc-borderWidthThin,1px) inset;
+   background-clip: padding-box;
+}

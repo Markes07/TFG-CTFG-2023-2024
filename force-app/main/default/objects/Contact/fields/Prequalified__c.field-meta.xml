@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prequalified__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>With this field we can know if the contact is prequalified or not</description>
+    <externalId>false</externalId>
+    <label>¿Precualificado?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Invite a un contacto a un Portal para volver a realizar pedidos de Commerce.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Portal para volver a realizar pedidos de Commerce: Invitación</name>
+    <style>none</style>
+    <subject>Le damos la bienvenida a {!Community_Name}</subject>
+    <textOnly>&lt;html&gt;
+            Estimado/a {!Receiving_User.FirstName},
+            &lt;p&gt;
+            Eche un vistazo a este portal para volver a realizar pedidos para tener una forma más sencilla de realizar pedidos de repetición con {!Organization.Name}. Puede ver sus pedidos pasados, modificar cantidades, realizar nuevos pedidos y ver estados de pedidos.
+            &lt;/p&gt;
+            &lt;p&gt;
+            Haga clic en el vínculo para acceder: &lt;a href={!Community_URL}&gt;{!Community_Name}&lt;/a&gt;
+            &lt;/p&gt;
+            Atentamente,&lt;br&gt;
+            {!Sending_User.Name}
+            &lt;/html&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,12 @@
+Intentó recientemente una acción en {!Community_Name}.
+Acción: {!Action}
+
+Navegador: {!Browser}
+Sistema operativo: {!Operating_System}
+Nombre de usuario: {!Receiving_User.Username}
+
+Para garantizar la seguridad de su cuenta, tenemos que comprobar su identidad. Introduzca el siguiente código donde {!Community_Name} lo solicite.
+
+Código de verificación: {!Verification_Code}
+
+Si no intentó esta acción en {!Community_Name} o no reconoce este navegador o sistema operativo, póngase en contacto con su administrador de {!Community_Name}.

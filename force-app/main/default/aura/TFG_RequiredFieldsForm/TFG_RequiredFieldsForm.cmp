@@ -1,0 +1,129 @@
+<!--
+    @author     FJMG
+    @since      Junio 15, 2023
+    @desc       Lightinig component for Step3 - Contrato requerido y creación reclamación
+    @history    Junio 15, 2023 - FJMG - Create Lightning Component
+-->
+
+    <aura:component description="TFG_RequiredFieldsForm" controller="TFG_RequiredFieldsFormController"
+    implements="flexipage:availableForAllPageTypes,lightning:availableForFlowScreens,force:hasRecordId"
+    extends="c:TFG_BaseComponent" access="global">
+    <aura:attribute name="showFooter" type="Boolean" default="true" />
+    <aura:attribute name="newClaimFields" type="Case" default="{'sobjectType' : 'Case',
+                                'Tipo_Reclamacion__c' : '',
+                                'Subtipo_Reclamacion__c' : '',
+                                'Clase__c' : '',
+                                'AccountId' : '',
+                                'ContactId' : '',
+                                'Observaciones__c' : '',
+                                'Comentarios_Apertura__c' : '',
+                                'ContractId__c' : ''}" />
+                                
+    <aura:attribute name="newClaim" type="String" />
+    <aura:attribute name="today" type="Object" />
+
+    <aura:attribute name="Id" type="Id" access="global" />
+    <aura:attribute name="selectedType" type="String" access="global" />
+    <aura:attribute name="selectedSubType" type="String" access="global" />
+    <aura:attribute name="selectedClassSubtype" type="String" access="global" />
+    <aura:attribute name="additionalObservations" type="String" access="global" />
+    <aura:attribute name="accountId" type="String" default="" />
+    <aura:attribute name="contactId" type="String" default="" />
+    <aura:attribute name="contractRelatedTo" type="Contract" />
+    <aura:attribute name="selectedLookUpContract" type="sObject" />
+    <aura:attribute name="contractRequired" type="Boolean" default="false" />
+    <aura:attribute name="contractId" type="String" default="" />
+    <aura:attribute name="comments" type="String"/>
+
+    <aura:attribute name="errorMsg" type="String" />
+
+    <aura:attribute name="isClearParent" type="Boolean" default="false" />
+    <aura:attribute name="isBack" type="Boolean" default="false" />   
+    <aura:attribute name="MaximumSizeObservations" type="String"/>
+    <aura:attribute name="isVisibleMaxLenghtMessage" type="Boolean" default="false"/>
+	
+	<!-- Accordion -->
+    <aura:attribute name="activeSections" type="List" default="['Observaciones', 'Customer']" />
+        
+    <!-- Spinner -->
+    <aura:attribute name="toggleSpinner" type="boolean" default="false"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+
+    <lightning:workspaceAPI aura:id="workspace" />
+    <div id="requiredFieldsFormInnerFlowContainer">
+        <lightning:card class="outter-card">
+            <aura:if isTrue="{!not(empty(v.errorMsg))}">
+                <div class="msg">
+                    <ui:message aura:id="errorMsg" severity="error" closable="true">
+                        {!v.errorMsg}
+                    </ui:message>
+                </div>
+            </aura:if>
+			
+			<aura:if isTrue="{!v.toggleSpinner}">
+                 <div class="slds-spinner_container">
+                  <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                    <span class="slds-assistive-text">Loading</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                  </div>
+                </div>
+ 			</aura:if>
+			
+			<!--lightning:recordEditForm-->
+			<div class="slds-box">
+                <lightning:accordion
+                allowMultipleSectionsOpen="true"
+                activeSectionName="{! v.activeSections }">
+                    <lightning:accordionSection name="Customer" label="{!$Label.c.Contract_data}" class=".slds-accordion__summary-heading">
+                        <div>
+                            <div class="slds-form slds-form_stacked ">
+                                <lightning:layout multipleRows="true" class="slds-m-around_small">
+                                    <lightning:layoutItem size="12" flexibility="auto">
+                                        <lightning:layout multipleRows="true" verticalAlign="stretch" pullToBoundary="medium">
+                                            <lightning:layoutItem size="12" flexibility="auto"
+                                                padding="horizontal-medium"
+                                                class="{!v.contractRequired ? 'slds-m-bottom--medium miRequired' : 'slds-m-bottom--medium'}">
+                                                <c:TFG_LookUpContract aura:id="lookupContract"
+                                                    accountId="{!v.accountId}" required="{!v.contractRequired}"
+                                                    value="{!v.contractId}" searchFields="ContractNumber, toLabel(Status), StartDate, EndDate"
+                                                    query="{!'AccountId = \'' + v.accountId + '\''}"
+                                                    disabled="false"
+                                                    filter=""
+                                                    IconName="custom:custom14" label="Contrato"
+                                                    selectedRecord="{!v.selectedLookUpContract}"
+                                                    orderBy="ContractNumber"
+                                                    isClear="{!v.isClearParent}" onChange="{!c.setLookupChange}"
+                                                    placeholderValue="Si no visualiza el contrato del cliente, pruebe a escribir el número..."/>
+                                            </lightning:layoutItem>
+                                        </lightning:layout>
+                                    </lightning:layoutItem>
+                                </lightning:layout>
+					        </div>
+                        </div>                    
+                    </lightning:accordionSection>		
+
+                    <lightning:accordionSection name="Observaciones" label="{!$Label.c.Observaciones_Adicionales}" class=".slds-accordion__summary-heading">
+                        <lightning:layout multipleRows="true" verticalAlign="stretch" pullToBoundary="medium">
+                            <lightning:layoutItem size="12" flexibility="auto" padding="horizontal-medium">
+                                <lightning:input aura:id="field_to_validate" label="{!$Label.c.Observaciones}" maxlength="{!$Label.c.SizeObservaciones}"
+                                    value="{!v.additionalObservations}" required="{!v.observationsRequired}" placeholder="{!$Label.c.Maximum_size_observations_text}"
+                                    onchange = "{!c.handleChangeObservations}"/>
+                                <aura:if isTrue="{!v.isVisibleMaxLenghtMessage}"> 
+                                    <div class="slds-form-element__help" style="color:rgb(194 57 52); margin-bottom: 10px;">{!$Label.c.Maximum_Size_Observaciones_Message}</div>
+                                </aura:if>
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                    </lightning:accordionSection>
+                    
+                </lightning:accordion>
+            </div>
+        </lightning:card>
+        <aura:if isTrue="{!v.showFooter}">
+            <c:TFG_FlowFooter aura:id="footerFlowCmp" availableActions="{!v.availableActions}"
+                navigateFlowEvent="{!c.handleNavigate}"/>
+        </aura:if>
+    </div>
+</aura:component>

@@ -1,0 +1,38 @@
+<!--
+* @ComponentName         TFG_FlowProgressIndicator
+* @Description           Lightning Component to indicated the creation progress of the Claim Case registration flow
+* @Author                FJMG
+* @Version               V0.1
+* @DateCreated           2023/05/27
+* @LastChange            2023/05/27            FJMG: Naming Conventions}
+-->
+
+<aura:component implements="lightning:availableForFlowScreens"
+                description="TFG_FlowProgressIndicator">
+    <!-- Attributes that store $Flow.ActiveStages and $Flow.CurrentStage -->
+    <aura:attribute name="stages" type="String[]" />
+    <aura:attribute name="currentStage" type="String" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <lightning:layout multipleRows="true">
+        <lightning:layoutItem class="{! 'slds-size--' + ( v.stages.length) + '-of-' +( v.stages.length) }">
+            <lightning:layout>
+                <aura:iteration items="{!v.stages}" var="stage" loaded="true">
+                    <aura:if isTrue="{!stage == v.currentStage}">
+                        <lightning:layoutItem class="{! 'slds-size--1-of-' +( v.stages.length) }">
+                            <div class="slds-text-align_center slds-text-title slds-text-color_default flow-current-stage">{!stage}</div>
+                        </lightning:layoutItem>
+                        <aura:set attribute="else">
+                            <lightning:layoutItem class="{! 'slds-size--1-of-' +(v.stages.length) }">
+                                <div class="slds-text-align_center slds-text-title slds-text-color_default flow-stage">{!stage}</div>
+                            </lightning:layoutItem>
+                        </aura:set>
+                    </aura:if>
+                </aura:iteration>
+            </lightning:layout>
+        </lightning:layoutItem>
+        <lightning:progressIndicator aura:id="progressIndicator" class="slds-m-top--medium"
+                                     currentStep="{!v.currentStage}"
+                                     type="base" variant="base" />
+    </lightning:layout>
+</aura:component>

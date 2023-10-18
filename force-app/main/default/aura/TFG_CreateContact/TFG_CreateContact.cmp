@@ -1,0 +1,69 @@
+<!--
+  * @ComponentName	TFG_CreateContact.cmp
+  * @description	Aura component to create a new contact
+  * @author			FJMG
+  * @email			fran19943@gmail.com
+  * @version		V0.1
+  * @dateCreated	2023/05/13
+  * @lastChange		
+-->
+
+<aura:component controller="TFG_CreateContact" implements="force:lightningQuickAction,force:hasSObjectName" access="global">
+    <aura:attribute name="contactRecord" type="Contact" default="{'sobjectType': 'Contact',
+                                                                    'Nombre__c':'',
+                                                                    'Apellidos__c':'',
+                                                                    'NIF__c':'',
+                                                                    'Metodo_contacto__c':'Seleccione un valor',
+                                                                    'Telefono__c':'',
+                                                                    'Email':'',
+                                                                    'Direccion__c':'',
+                                                                    'Rol__c':'Seleccione un valor',
+                                                                    'FirstName':'',
+                                                                    'LastName':'',
+                                                                    'OwnerId':'00509000000EDuIAAW',
+                                                                    'AccountId':''}"/>
+    <aura:attribute name="isNifValid" type="Boolean" default="false"/>
+    <aura:attribute name="isTelefonoValid" type="Boolean" default="false"/>
+    <aura:attribute name="isEmailValid" type="Boolean" default="false"/>
+    <aura:attribute name="isFormValid" type="Boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:card title="Crear Contacto">
+        <form>
+            <!-- Campos del contacto -->
+            <lightning:input label="Nombre" value="{!v.contactRecord.FirstName}" required="true" onchange="{!c.handleInputChange}"/>
+            <lightning:input label="Apellidos" value="{!v.contactRecord.LastName}" required="true" onchange="{!c.handleInputChange}"/>
+            <lightning:input aura:id="nifField" label="NIF" value="{!v.contactRecord.NIF__c}" required="true" pattern="[0-9]{8}[A-Z]{1}" 
+                        messageWhenPatternMismatch="El NIF debe tener 8 dígitos seguidos de una letra mayúscula."
+                        onchange="{!c.handleInputChange}"/>
+            <lightning:select label="Método de contacto" value="{!v.contactRecord.Metodo_contacto__c}" required="true"
+                        onchange="{!c.handleInputChange}">
+                <option value="Seleccione un valor">Seleccione un valor</option>
+                <option value="Teléfono">Teléfono</option>
+                <option value="SMS">SMS</option>
+                <option value="Email">Email</option>
+            </lightning:select>
+            <lightning:input aura:id="telefonoField" label="Teléfono" value="{!v.contactRecord.Telefono__c}" pattern="[0-9]{9}" 
+                        messageWhenPatternMismatch="El teléfono debe tener 9 dígitos numéricos."
+                        onchange="{!c.handleInputChange}"/>
+            <lightning:input type="email" aura:id="emailField" label="Email" value="{!v.contactRecord.Email}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+                        messageWhenPatternMismatch="Debe introducir un email válido."
+                        onchange="{!c.handleInputChange}"/>
+            <lightning:input label="Dirección" value="{!v.contactRecord.Direccion__c}"
+                        onchange="{!c.handleInputChange}"/>
+            <lightning:select label="Rol" value="{!v.contactRecord.Rol__c}" required="true"
+                        onchange="{!c.handleInputChange}">
+                <option value="Seleccione un valor">Seleccione un valor</option>
+                <option value="Titular del contrato">Titular del contrato</option>
+                <option value="Autorizado">Autorizado</option>
+            </lightning:select>
+            
+            <!-- Búsqueda de clientes -->
+            <c:TFG_LookUp selectedAccountId ="{!v.contactRecord.AccountId}"/>
+            
+            <!-- Botones -->
+            <footer class="slds-modal__footer">
+                <lightning:button variant="brand" label="Guardar" onclick="{!c.saveRecord}" disabled="{!not(v.isFormValid)}"/>
+            </footer>
+        </form>
+    </lightning:card>
+</aura:component>

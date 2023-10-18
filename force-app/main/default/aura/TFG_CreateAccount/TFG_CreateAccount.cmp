@@ -1,0 +1,23 @@
+<!--
+  * @ComponentName	TFG_CreateAccount.cmp
+  * @description	Aura component to create a new account bassed on his account name
+  * @author			FJMG
+  * @email			fran19943@gmail.com
+  * @version		V0.1
+  * @dateCreated	2023/05/07
+  * @lastChange		
+-->
+
+<aura:component controller="TFG_CreateAccount"
+                implements="force:lightningQuickAction,force:hasSObjectName"
+                access="global">
+    <aura:attribute name="accountRecord" type="Account" default="{'sObjectType' : 'Account',
+                                                                'Name' : ''}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="slds-p-around_small">
+        <lightning:input type="Text" label="Nombre y Apellidos" value="{!v.accountRecord.Name}"/>
+        <footer class="slds-modal__footer">
+            <lightning:button label="Guardar" iconPosition="left" variant="brand" onclick="{!c.saveRecord}"/>
+        </footer>
+    </div>
+</aura:component>

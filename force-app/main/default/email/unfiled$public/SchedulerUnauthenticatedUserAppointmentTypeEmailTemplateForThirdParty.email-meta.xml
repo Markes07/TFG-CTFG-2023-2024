@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Plantilla de correo electrónico de confirmación de una cita cuando se programan las citas empleando tipos de cita con aplicaciones de vídeo de terceros.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cita para usuario no autenticado empleando tipos de cita - Para terceros.</name>
+    <style>none</style>
+    <subject>{!Organization.Name}:Confirmación de cita.</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Amount__c</fullName>
+    <description>Many homebuyers who work with DreamHouse Realty are prequalified for a home loan. Brokers need to know how much money their clients can borrow so they can show properties in the right price range</description>
+    <externalId>false</externalId>
+    <label>Loan Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Currency</type>
+</CustomField>

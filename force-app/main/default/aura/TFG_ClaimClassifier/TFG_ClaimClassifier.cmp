@@ -1,0 +1,106 @@
+<!--
+    @author     FJMG
+    @since      Junio 10, 2023
+    @desc       Lightinig component for Step2 - Clasificación de la Reclamación
+    @history    Junio 10, 2023 - FJMG - Create Lightning Component
+-->
+
+<aura:component description="TFG_ClaimClassifier" 
+                controller="TFG_ClaimClassifier"
+                extends="c:TFG_BaseComponent" 
+                implements="lightning:availableForFlowScreens,force:hasRecordId" 
+                access="global">
+    
+    <aura:attribute name="comments" type="String" />
+    <aura:attribute name="claimCase" type="Case" />
+    <aura:attribute name="stringClaim" type="String" />
+    <aura:attribute name="hasSorterChanged" type="Boolean" default="false" />
+    <aura:attribute name="retrieveSorterInfo" type="Boolean" />
+    <aura:attribute name="claimTimestampId" type="String" />
+	<aura:attribute name="previousComment" type="String"/>   
+    <aura:attribute name="customerTypeMgsByType" type="Map" />
+    <aura:attribute name="customerSubTypeAndMsgByTypeDesc" type="Map" />
+    <aura:attribute name="codeAndCustomerType" type="Map" />
+    <aura:attribute name="codeAndCustomerSubType" type="Map" />
+    <aura:attribute name="classAndCustomerSubType" type="Map" />
+    <aura:attribute name='typeOptions' type='List' />
+    <aura:attribute name="selectedType" type="String" />
+    <aura:attribute name="selectedCodeType" type="String" />
+    <aura:attribute name='subTypeOptions' type='List' />
+    <aura:attribute name="selectedSubtype" type="String" />
+    <aura:attribute name="selectedCodeSubType" type="String" />
+    <aura:attribute name="selectedClassSubType" type="String" />
+    <aura:attribute name="clarificationType" type="String" />
+    <aura:attribute name="clarificationSubType" type="String" />
+    <aura:attribute name="interviewGuid" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:handler name="change" value="{!v.selectedType}" action="{!c.onSelectType}" />
+    <aura:handler name="change" value="{!v.selectedSubtype}" action="{!c.onSelectSubType}" />
+
+    <div aura:id="claimClassifierContainer">
+        <lightning:card class="outter-card">      
+            <div class="slds-box c-container slds-p-right--x-small slds-p-left--x-large">
+                <!-- Display the form -->
+                <lightning:layout multipleRows="true" class="slds-m-around_small">
+                    <lightning:layoutItem padding="around-small" flexibility="auto" size="6">
+                        <lightning:select aura:id="Type_Claim" 
+                                            required="true" 
+                                            value="{!v.selectedType}"
+                                            label="{!$Label.c.Type_Claim}">
+                            <option value="">{!$Label.c.Select_option}</option>
+                            <aura:iteration items="{!v.typeOptions}" var="type">
+                                <option value="{!type.desc}" selected="{!v.selectedType == type.desc}">
+                                    {!type.desc}
+                                </option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </lightning:layoutItem>
+
+                    <lightning:layoutItem padding="around-small" flexibility="auto" size="6">
+                        <div class="slds-form-element slds-form-element_edit">
+                            <span class="slds-form-element__label">
+                                {!$Label.c.Clarification_Type}
+                            </span>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element__static">
+                                    {!v.clarificationType}
+                                </div>
+                            </div>
+                        </div>
+                    </lightning:layoutItem>
+
+                    <lightning:layoutItem class="slds-m-top--small" padding="around-small" flexibility="auto"
+                        size="6">
+                        <lightning:select aura:id="Subtype_Claim" 
+                                            required="true"
+                                            value="{!v.selectedSubtype}" 
+                                            label="{!$Label.c.Subtype_Claim}">
+                            <option value="">{!$Label.c.Select_option}</option>
+                            <aura:iteration items="{!v.subTypeOptions}" var="subTypeDesc">
+                                <option value="{!subTypeDesc.desc}" selected="{!v.selectedSubtype == subTypeDesc.desc}">
+                                    {!subTypeDesc.desc}
+                                </option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </lightning:layoutItem>
+
+                    <lightning:layoutItem class="slds-m-top--small" padding="around-small" flexibility="auto"
+                        size="6">
+                        <div class="slds-form-element slds-form-element_edit">
+                            <span class="slds-form-element__label">
+                                {!$Label.c.Clarification_SubType}
+                            </span>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element__static">
+                                    {!v.clarificationSubType}
+                                </div>
+                            </div>
+                        </div>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+        </lightning:card>
+
+        <c:TFG_FlowFooter availableActions="{!v.availableActions}" navigateFlowEvent="{!c.handleNavigate}"/>
+    </div>
+</aura:component>

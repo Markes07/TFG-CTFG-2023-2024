@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Cancel_Process</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel Process</shortDescription>
+        <value>Cancelar Proceso</value>
+    </labels>
+    <labels>
+        <fullName>Clarification_SubType</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Clarification SubType</shortDescription>
+        <value>Aclaración Subtipo</value>
+    </labels>
+    <labels>
+        <fullName>Clarification_Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Clarification Type</shortDescription>
+        <value>Aclaración Tipo</value>
+    </labels>
+    <labels>
+        <fullName>Cliente</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cliente</shortDescription>
+        <value>Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Comentarios_Apertura</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Comentarios Apertura</shortDescription>
+        <value>Comentarios Apertura</value>
+    </labels>
+    <labels>
+        <fullName>CompleteField</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CompleteField</shortDescription>
+        <value>Completar este campo</value>
+    </labels>
+    <labels>
+        <fullName>Contract_Number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract Number</shortDescription>
+        <value>CONTRATO</value>
+    </labels>
+    <labels>
+        <fullName>Contract_data</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract data</shortDescription>
+        <value>Datos del contrato del cliente</value>
+    </labels>
+    <labels>
+        <fullName>Exit_Confirmation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Exit Confirmation</shortDescription>
+        <value>¿Estás seguro de que quieres cancelar el proceso de Alta?</value>
+    </labels>
+    <labels>
+        <fullName>Fecha_fin</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Fecha fin</shortDescription>
+        <value>FECHA FIN</value>
+    </labels>
+    <labels>
+        <fullName>Fecha_inicio</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Fecha inicio</shortDescription>
+        <value>FECHA INICIO</value>
+    </labels>
+    <labels>
+        <fullName>GenericErrorTitle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>GenericErrorTitle</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>Incomplete_Request</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Incomplete Request</shortDescription>
+        <value>El servidor no responde o no está disponible.</value>
+    </labels>
+    <labels>
+        <fullName>Information_provided</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Information provided</shortDescription>
+        <value>INFORMACIÓN PROPORCIONADA POR LA PERSONA QUE CONTACTA</value>
+    </labels>
+    <labels>
+        <fullName>Loading</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Loading</shortDescription>
+        <value>Cargando</value>
+    </labels>
+    <labels>
+        <fullName>Maximum_Size_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Maximum Size Message</shortDescription>
+        <value>Has alcanzado el límite de caracteres, asegura que has recogido la información relevante</value>
+    </labels>
+    <labels>
+        <fullName>Maximum_Size_Observaciones_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Maximum Size Observaciones Message</shortDescription>
+        <value>Has alcanzado el límite del campo, asegura que has podido recoger la información relevante</value>
+    </labels>
+    <labels>
+        <fullName>Maximum_size_observations_text</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Maximum size observations text</shortDescription>
+        <value>Recuerde que el tamaño máximo son 1000 caracteres y no dejará escribir más</value>
+    </labels>
+    <labels>
+        <fullName>Maximun_size_comment_opening</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Maximun size comment opening</shortDescription>
+        <value>3000</value>
+    </labels>
+    <labels>
+        <fullName>Maximun_size_comment_text</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Maximun size comment text</shortDescription>
+        <value>Recuerde que el tamaño máximo son 3000 caracteres y no dejará escribir más</value>
+    </labels>
+    <labels>
+        <fullName>Minimun_size_comment_close</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Minimun size comment close</shortDescription>
+        <value>20</value>
+    </labels>
+    <labels>
+        <fullName>Minimun_size_comment_opening</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Minimun size comment opening</shortDescription>
+        <value>20</value>
+    </labels>
+    <labels>
+        <fullName>New_Claim</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Nueva Reclamación</shortDescription>
+        <value>Nueva Reclamación</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Siguiente</value>
+    </labels>
+    <labels>
+        <fullName>No</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>No_resultados</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No resultados</shortDescription>
+        <value>No se han encontrado contratos</value>
+    </labels>
+    <labels>
+        <fullName>Nombre_y_apellidos</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Nombre y apellidos</shortDescription>
+        <value>Nombre y Apellidos</value>
+    </labels>
+    <labels>
+        <fullName>Observaciones</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Observaciones</shortDescription>
+        <value>Observaciones</value>
+    </labels>
+    <labels>
+        <fullName>Observaciones_Adicionales</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Observaciones Adicionales</shortDescription>
+        <value>Observaciones Adicionales</value>
+    </labels>
+    <labels>
+        <fullName>Pause</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pause</shortDescription>
+        <value>Pausa</value>
+    </labels>
+    <labels>
+        <fullName>Persona_que_contacta</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Persona que contacta</shortDescription>
+        <value>PERSONA QUE CONTACTA</value>
+    </labels>
+    <labels>
+        <fullName>Previous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Anterior</value>
+    </labels>
+    <labels>
+        <fullName>Required_Fields</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Fields</shortDescription>
+        <value>Por favor, revise los campos requeridos y el formato de los datos introducidos.</value>
+    </labels>
+    <labels>
+        <fullName>Rol</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Rol</shortDescription>
+        <value>Rol de la persona de contacto</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Finalizar</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Resultados encontrados</value>
+    </labels>
+    <labels>
+        <fullName>Select_option</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select option</shortDescription>
+        <value>Seleccione una opción</value>
+    </labels>
+    <labels>
+        <fullName>Selection_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Selection Required</shortDescription>
+        <value>Por valor seleccione un tipo y subtipo</value>
+    </labels>
+    <labels>
+        <fullName>SizeObservaciones</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SizeObservaciones</shortDescription>
+        <value>1000</value>
+    </labels>
+    <labels>
+        <fullName>Status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status</shortDescription>
+        <value>ESTADO</value>
+    </labels>
+    <labels>
+        <fullName>Subtype_Claim</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Subtype Claim</shortDescription>
+        <value>Subtipo Reclamación</value>
+    </labels>
+    <labels>
+        <fullName>Type_Claim</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Type Claim</shortDescription>
+        <value>Tipo Reclamación</value>
+    </labels>
+    <labels>
+        <fullName>UnknownError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UnknownError</shortDescription>
+        <value>Error desconocido</value>
+    </labels>
+    <labels>
+        <fullName>Visualiza_Contrato</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Visualiza Contrato</shortDescription>
+        <value>Si no visualiza el contrato del cliente, pruebe a escribir el número</value>
+    </labels>
+    <labels>
+        <fullName>Yes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Yes</shortDescription>
+        <value>Sí</value>
+    </labels>
+    <labels>
+        <fullName>whatsAppIdentifierNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>whatsAppIdentifierNumber</shortDescription>
+        <value>127311917128743</value>
+    </labels>
+    <labels>
+        <fullName>whatsAppToken</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>whatsAppToken</shortDescription>
+        <value>EAAJrT4XCCjkBOwIpO7DKkH4ZBrBXjDAPmI4s1bctIggPEvCxlT8OhAeIC0Tyuw3ttMrhRc74sEbXO65WEIAzY6b8x7dQMdQ0EPKgmZBJJysafVw1zfeBFD4UhtJ3ZAyVBrzADrn2EkQiZB3oqZCXM0DZAkCPvylZCqdLPncmTS7U1JIDPvbsRfDTZC02ZA8bNTFdBYLSpG4Lxhx7sPP4fuQZDZD</value>
+    </labels>
+</CustomLabels>

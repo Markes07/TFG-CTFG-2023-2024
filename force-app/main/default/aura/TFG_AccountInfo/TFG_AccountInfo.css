@@ -1,0 +1,40 @@
+.THIS .card-background {
+    background-color: #F3F3F3 !important;
+}
+
+.THIS .slds-form_stacked .slds-checkbox__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.THIS .slds-form_stacked .slds-checkbox_faux {
+    order: 1;
+    margin-bottom: 1px;
+}
+
+.THIS .slds-form_stacked .slds-form-element__label {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.THIS .output-lookup {
+	text-decoration: none;
+}
+
+.THIS .output-lookup lightning-formatted-text {
+    color: #044CE2 !important;
+    border-bottom: 1px dotted;
+    display: inline;
+}
+
+.THIS .output-lookup:active lightning-formatted-text, .THIS .output-lookup:hover lightning-formatted-text {
+    color: #044CE2 !important;
+}
+
+.THIS .slds-m-top--medium.slds-p-right_small.slds-p-left_small.slds-col.slds-size_12-of-12 {
+    margin : 0px;
+}
+
+.THIS .card-background {
+    margin-bottom: 0px;
+}
