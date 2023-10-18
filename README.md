@@ -13,3 +13,17 @@ Surge de la necesidad de enviar una comunicación directa al cliente cuando se c
 
 **Objetivos del proyecto:**
 * Desarrollar una integración con la API de WhatsApp para comunicarse directamente con los clientes cuando se produce un cambio en su reclamación.
+
+<footer>
+<p style="float:left; width: 20%;">
+Autor: Francisco javier Marqués Gaona</br>
+Email: fran19943@gmail.com
+</p>
+<p style="float:left; width: 60%; text-align:center;">
+<a href="https://github.com/Markes07/TFG-CTFG-2023-2024/tree/master">
+      <img src="https://github.com/Markes07/TFG-CTFG-2023-2024/blob/master/TFG%20Gestor%20Reclamaciones.png" alt="TFG Gestor Reclamaciones"/>
+  </a>
+</p>
+<p style="float:left; width: 20%;">
+</p>
+</footer>
