@@ -1,18 +1,15 @@
-# Salesforce DX Project: Next Steps
+# TFG-CTFG-2023-2024
+Repositorio para el proyecto de Trabajo de Fin de Grado y Complemento del Trabajo de Fin de Grado.
+Elaboración de una aplicación CRM en Salesforce para gestionar 
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# TFG
+La idea de este proyecto surge de la necesidad de mejorar la experiencia de los clientes en el ámbito de la gestión de reclamaciones. Se dotará a las empresas la capacidad de mejorar el funcionamiento y satisfacer las necesidades de sus clientes, dotando a la aplicación de la posibilidad de catalogar dichas necesidades en diferentes tipologías, que posteriormente serán tratadas por agentes especializados.
 
-## How Do You Plan to Deploy Your Changes?
+**Objetivos del proyecto:**
+* Facilitar a las empresas una aplicación en Salesforce capaz de gestionar las reclamaciones de los clientes, independientemente del tipo de empresa que vaya a requerir de esta solución.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+# CTFG
+Surge de la necesidad de enviar una comunicación directa al cliente cuando se crea una reclamación en el sistema, se produce un cambio de estado sobre ella o bien se procede al cierre de la misma.
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+**Objetivos del proyecto:**
+* Desarrollar una integración con la API de WhatsApp para comunicarse directamente con los clientes cuando se produce un cambio en su reclamación.
